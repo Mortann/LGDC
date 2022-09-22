@@ -65,8 +65,7 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
         <br><br>
 
         <input type="submit" name="envoi">
-<h1><br><br><br></h1>
-<br><br><br>
+<h1>
 <br><br>  
   
         <footer>
