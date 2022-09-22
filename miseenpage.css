@@ -157,8 +157,8 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 #deuxiemeTrait {
-  height: 1px;
-  width: 75%;
+  height: 2px;
+  width: 50%;
   background-color: #FFFAE1;
   margin: 60px auto;
 }
@@ -168,9 +168,11 @@ button:hover {
   padding: 0 10%;
 }
 #copyright {
-  width: 50%;
+  width: 75%;
   text-align: left;
   color: #FFFAE1;
+  font-size: 1.5em;
+
 }
 #icons {
   width: 50%;
@@ -179,7 +181,7 @@ button:hover {
 #icons a {
   display: inline-block;
   padding: 0 15px;
-  font-size: 1.3em;
+  font-size: 2em;
   color: #FFFAE1;
 }
 #icons a:hover {
