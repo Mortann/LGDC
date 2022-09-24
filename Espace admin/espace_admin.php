@@ -11,7 +11,7 @@ if(!$_SESSION['mdp']){
   <head>
     <meta charset="UTF-8">
 
-    <title>Espace Membre </title>
+    <title>Espace Admin </title>
 
     <link rel="stylesheet" href="../miseenpage.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -39,7 +39,7 @@ if(!$_SESSION['mdp']){
     </header>
     <section id="presentation">
       <div id="texteIntro">
-        <a href="../Espace admin/inscription.php">
+        <a href="../Espace membre/inscription.php">
         <button>Inscrire une nouvelle personne. </button>
         <br><br>
         <a href="deconnexion.php">
