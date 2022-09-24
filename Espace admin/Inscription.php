@@ -30,7 +30,10 @@ if(!$_SESSION['mdp']){
      <div id="imagePrincipale2">
 <br><br><br><br><br><br><br><br><br><br><br><br>
     <form method="POST" action="" align ="center">
-
+   
+        <br><h3>Nombres OC : </h3>
+        <input type="text" name="OC" autocomplete="off">
+        <br>
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
         <input type="checkbox" class="demo2" id="demo2">
