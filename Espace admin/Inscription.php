@@ -30,7 +30,7 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
 <head>
     <meta charset="UTF-8">
     <title>Espace d'inscription</title>
-    <link rel="stylesheet" href="miseenpage2.css">   
+    <link rel="stylesheet" href="../Espace membre/miseenpage.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
