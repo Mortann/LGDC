@@ -3,6 +3,21 @@ session_start();
 if(!$_SESSION['mdp']){
     header('Location: connexion.php');
 } 
+if(isset($_POST['envoi'])){
+    if(!empty($_POST['Clan'])){
+        $Clan = $_POST['Clan'];
+
+        $recupUser = $bdd->prepare('SELECT * FROM users WHERE Clan = ? ');
+        $recupUser->execute(array($Clan));
+        if($recupUser->rowCount() > 0){
+
+        }
+
+    }else{
+        echo "Veuillez compléter tous les champs ...";
+    }
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,16 +51,16 @@ if(!$_SESSION['mdp']){
         <br>
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
-        <input type="checkbox"name="demo2" id="Clan">
+        <input type="checkbox"name="Clan" id="Clan">
         <label for="Clan">Clan du Tonnère</label>  <br><br>
         
-        <input type="checkbox" name="demo2" id="Clan">
+        <input type="checkbox" name="Clan" id="Clan">
         <label for="Clan"> Clan du Vent</label>  <br><br>
         
-        <input type="checkbox" name="demo2" id="Clan">
+        <input type="checkbox" name="Clan" id="Clan">
         <label for="Clan">Clan de la Rivière</label>  <br><br>
         
-        <input type="checkbox" name="demo2" id="Clan">
+        <input type="checkbox" name="Clan" id="Clan">
         <label for="Clan">Clan de l'Ombre</label>  
 
         <br><h3>Nom Chaton :</h3>
