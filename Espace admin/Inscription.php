@@ -6,13 +6,7 @@
             $insertUser = $bdd->prepare('INSERT INTO users(pseudo, mdp)VALUES(?, ?)');
             $insertUser->execute(array($pseudo, $mdp));
     
-            $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND mdp = ?');
-            $recupUser->execute(array($pseudo, $mdp));
-            if($recupUser->rowCount() > 0){
-                $_SESSION['pseudo'] = $pseudo;
-                $_SESSION['mdp'] = $mdp;
-                $_SESSION['id'] = $recupUser->fetch()['id'];
-            }
+
     
         }else{
             echo "Veuillez compléter tous les champs ...";
