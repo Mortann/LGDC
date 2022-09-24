@@ -184,6 +184,21 @@ button:hover {
   transition: 0.1s;
 }
 
+input[type="checkbox"].demo2 {
+  display: none;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1px 3px 2px black;
+}
+input[type="checkbox"].demo2 + label::before {
+  content:'';
+  border: 1px solid #000000;
+  padding: 0 0.6rem;
+  margin-right: 0.3rem;
+}
+input[type="checkbox"].demo2:checked + label::before {
+  background-color: #000000;
+}
 
 /* ******************* FOOTER ******************** */
 footer {
