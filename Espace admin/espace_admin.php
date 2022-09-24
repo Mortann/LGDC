@@ -39,7 +39,7 @@ if(!$_SESSION['mdp']){
     </header>
     <section id="presentation">
       <div id="texteIntro">
-        <a href="inscription.php">
+        <a href="../Espace admin/inscription.php">
         <button>Inscrire une nouvelle personne. </button>
         <br><br>
         <a href="deconnexion.php">
