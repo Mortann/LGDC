@@ -2,20 +2,7 @@
 session_start();
 if(!$_SESSION['mdp']){
     header('Location: connexion.php');
-    if(isset($_POST['envoi'])){
-        if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
-            $pseudo = htmlspecialchars($_POST['pseudo']);
-            $mdp = sha1($_POST['mdp']);
-            $insertUser = $bdd->prepare('INSERT INTO users(pseudo, mdp)VALUES(?, ?)');
-            $insertUser->execute(array($pseudo, $mdp));
-    
-            $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND mdp = ?');
-            $recupUser->execute(array($pseudo, $mdp));
 
-    
-        }else{
-            echo "Veuillez compléter tous les champs ...";
-        }
 ?>
 
 <!DOCTYPE html>
