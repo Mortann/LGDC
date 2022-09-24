@@ -37,16 +37,16 @@ if(!$_SESSION['mdp']){
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
         <input type="checkbox"name="demo2" id="Clan">
-        <label for="demo2">Clan du Tonnère</label>  <br><br>
+        <label for="Clan">Clan du Tonnère</label>  <br><br>
         
         <input type="checkbox" name="demo2" id="Clan">
-        <label for="demo2"> Clan du Vent</label>  <br><br>
+        <label for="Clan"> Clan du Vent</label>  <br><br>
         
         <input type="checkbox" name="demo2" id="Clan">
-        <label for="demo2">Clan de la Rivière</label>  <br><br>
+        <label for="Clan">Clan de la Rivière</label>  <br><br>
         
         <input type="checkbox" name="demo2" id="Clan">
-        <label for="demo2">Clan de l'Ombre</label>  
+        <label for="Clan">Clan de l'Ombre</label>  
 
         <br><h3>Nom Chaton :</h3>
         <input type="text" name="NomC" autocomplete="off">
