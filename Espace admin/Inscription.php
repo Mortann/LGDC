@@ -53,13 +53,13 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
 
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
-        <input type="checkbox" class="demo2" id="demo2">
+        <input type="checkbox" class="text" id="demo2">
         <label for="demo2">Clan du Tonnère</label>   
-        <input type="checkbox" class="demo2" id="demo2">
+        <input type="checkbox" class="text" id="demo2">
         <label for="demo2">Clan du Vent </label>  
-        <input type="checkbox" class="demo2" id="demo2">
+        <input type="checkbox" class="text" id="demo2">
         <label for="demo2">Clan de la Rivière</label>  
-        <input type="checkbox" class="demo2" id="demo2">
+        <input type="checkbox" class="text" id="demo2">
         <label for="demo2">Clan de l'Ombre</label>  
 
         <br><h3>Nom Chaton :</h3>
