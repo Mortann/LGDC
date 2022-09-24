@@ -22,7 +22,9 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   padding-top: 30px;
-  font-size: 2em;
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+
 }
 a {
   text-decoration: none;
@@ -65,6 +67,20 @@ header li {
 
 
 /* **************** IMAGE PRINCIPALE ************* */
+
+
+
+input[type="radio"].demo2 + label {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: #6c757d;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
 #imagePrincipale2 {
   background: url(../média/aa2.jpg) no-repeat fixed ;
   background-size: cover;
@@ -89,8 +105,8 @@ h1 {
 }
 h3 {
   text-align: center;
-  color:antiquewhite;
-  font-size: 3em;
+  color:rgb(226, 226, 226);
+  font-size: 2em;
   text-shadow: 1px 3px 2px black;
 }
 /* *************** PRESENTATION ********************** */
@@ -121,141 +137,6 @@ h3 {
   font-weight: 300;
 }
 /* ******************* FOOTER ******************** */
-footer {
-  background-color: #524A3A;
-  color: #FFFAE1;
-  padding: 20px 0 10px 0;
-  text-align: center;
-}
-form {
-  margin: 0 auto;
-  max-width: 900px;
-}
-input, textarea, button {
-  border: none;
-  width: 55%;
-  padding: 15px 10px;
-  margin: 1px 0;
-  font-size: 1.2em;
-  font-family: 'Advent Pro', sans-serif;
-  border-radius: 8px;
-}
-textarea {
-  height: 120px;
-}
-button {
-  font-size: 1.5em;
-  background-color: #FFFAE1;
-}
-button:hover {
-  background-color: #e55039;
-  color: #FFFAE1;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-#deuxiemeTrait {
-  height: 1px;
-  width: 75%;
-  background-color: #FFFAE1;
-  margin: 60px auto;
-}
-#copyrightEtIcons {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 0 10%;
-}
-#copyright {
-  width: 50%;
-  text-align: left;
-  color: #FFFAE1;
-}
-#icons {
-  width: 50%;
-  text-align: right;
-}
-#icons a {
-  display: inline-block;
-  padding: 0 15px;
-  font-size: 1.3em;
-  color: #FFFAE1;
-}
-#icons a:hover {
-  transform: scale(1.5);
-  transition: 0.1s;
-}
-
-
-/* ******************* FOOTER ******************** */
-footer {
-  background-color: #777268;
-  color: #FFFAE1;
-  padding: 20px 0 10px 0;
-  text-align: center;
-}
-form {
-  margin: 0 auto;
-  max-width: 900px;
-}
-input, textarea, button {
-  border: none;
-  width: 55%;
-  padding: 15px 10px;
-  margin: 1px 0;
-  font-size: 1.2em;
-  font-family: 'Advent Pro', sans-serif;
-  border-radius: 8px;
-}
-textarea {
-  height: 120px;
-}
-button {
-  font-size: 1.5em;
-  background-color: #FFFAE1;
-}
-button:hover {
-  background-color: #e55039;
-  color: #FFFAE1;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-#deuxiemeTrait {
-  height: 2px;
-  width: 50%;
-  background-color: #FFFAE1;
-  margin: 60px auto;
-}
-#copyrightEtIcons {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 0 10%;
-}
-#copyright {
-  width: 75%;
-  text-align: left;
-  color: #FFFAE1;
-  font-size: 1.5em;
-
-}
-#icons {
-  width: 50%;
-  text-align: right;
-}
-#icons a {
-  display: inline-block;
-  padding: 0 15px;
-  font-size: 2em;
-  color: #FFFAE1;
-}
-#icons a:hover {
-  transform: scale(1.5);
-  transition: 0.1s;
-}
-h7 {
-  padding: 0;
-  margin: 0;
-  font-size: 1.5em;
-}
-
 
 input[type="checkbox"].demo2 {
   display: none;
@@ -272,3 +153,4 @@ input[type="checkbox"].demo2 + label::before {
 input[type="checkbox"].demo2:checked + label::before {
   background-color: #000000;
 }
+

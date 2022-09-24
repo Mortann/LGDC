@@ -1,21 +1,25 @@
 <?php
 session_start();
-$bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=UTF8', 'u623834937_discord', 'lgdcRP<1' );
+$sqlHost     = '127.0.0.1';         
+$sqlUser     = 'root';            
+$sqlPassword = '';                
+$dbName      = 'primfx';   
+ 
+/*$bdd = new PDO('mysql:host='.$sqlHost.';dbname='.$dbName.';charset=utf8',$sqlUser,$sqlPassword) or die($bdd->errorInfo());*/ 
+$bdd = new PDO( 'mysql:host=localhost;dbname=espace_membres;charset=UTF8', 'root', '' );
     if(isset($_POST['envoi'])){
     if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
         $pseudo = htmlspecialchars($_POST['pseudo']);
         $mdp = sha1($_POST['mdp']);
+        $insertUser = $bdd->prepare('INSERT INTO users(pseudo, mdp)VALUES(?, ?)');
+        $insertUser->execute(array($pseudo, $mdp));
 
         $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND mdp = ?');
         $recupUser->execute(array($pseudo, $mdp));
-
         if($recupUser->rowCount() > 0){
             $_SESSION['pseudo'] = $pseudo;
             $_SESSION['mdp'] = $mdp;
             $_SESSION['id'] = $recupUser->fetch()['id'];
-            header('Location: membre.php');
-        }else{
-            echo"Votre mot de passe ou pseudo est incorrect";
         }
 
     }else{
@@ -30,7 +34,7 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
 <head>
     <meta charset="UTF-8">
     <title>Espace d'inscription</title>
-    <link rel="stylesheet" href="../Espace membre/miseenpage.css">   
+    <link rel="stylesheet" href="../Espace membre/miseenpage2.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
@@ -51,18 +55,10 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
 <br><br><br><br><br><br><br><br><br><br><br><br>
     <form method="POST" action="" align ="center">
 
-        <br><h3>Nombre OC : </h3>
-        <input type="text" name="OC" autocomplete="off">
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
-        <input type="checkbox" class="text" id="demo2">
-        <label for="demo2">Clan du Tonnère</label>   
-        <input type="checkbox" class="text" id="demo2">
-        <label for="demo2">Clan du Vent </label>  
-        <input type="checkbox" class="text" id="demo2">
-        <label for="demo2">Clan de la Rivière</label>  
-        <input type="checkbox" class="text" id="demo2">
-        <label for="demo2">Clan de l'Ombre</label>  
+        <input type="checkbox" class="demo2" id="demo2">
+        <label for="demo2">Démo 2</label>   
 
         <br><h3>Nom Chaton :</h3>
         <input type="text" name="NomC" autocomplete="off">
