@@ -1,32 +1,4 @@
-<?php
-session_start();
-$sqlHost     = '127.0.0.1';         
-$sqlUser     = 'root';            
-$sqlPassword = '';                
-$dbName      = 'primfx';   
- 
-/*$bdd = new PDO('mysql:host='.$sqlHost.';dbname='.$dbName.';charset=utf8',$sqlUser,$sqlPassword) or die($bdd->errorInfo());*/ 
-$bdd = new PDO( 'mysql:host=localhost;dbname=espace_membres;charset=UTF8', 'root', '' );
-    if(isset($_POST['envoi'])){
-    if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
-        $pseudo = htmlspecialchars($_POST['pseudo']);
-        $mdp = sha1($_POST['mdp']);
-        $insertUser = $bdd->prepare('INSERT INTO users(pseudo, mdp)VALUES(?, ?)');
-        $insertUser->execute(array($pseudo, $mdp));
 
-        $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND mdp = ?');
-        $recupUser->execute(array($pseudo, $mdp));
-        if($recupUser->rowCount() > 0){
-            $_SESSION['pseudo'] = $pseudo;
-            $_SESSION['mdp'] = $mdp;
-            $_SESSION['id'] = $recupUser->fetch()['id'];
-        }
-
-    }else{
-        echo "Veuillez compléter tous les champs ...";
-    }
-
-}
 ?>
 
 <!DOCTYPE html>
