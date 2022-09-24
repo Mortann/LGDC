@@ -51,6 +51,8 @@ $bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=U
 <br><br><br><br><br><br><br><br><br><br><br><br>
     <form method="POST" action="" align ="center">
 
+        <br><h3>Nombre OC : </h3>
+        <input type="text" name="OC" autocomplete="off">
         <h2>IDENTITÉ</h2>
         <br><h3>Clan :</h3>
         <input type="checkbox" class="text" id="demo2">
