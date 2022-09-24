@@ -39,7 +39,7 @@ if(!$_SESSION['mdp']){
         <input type="checkbox" class="demo2" id="demo2">
         <label for="demo2">Clan du Tonnère</label>  <br>
         <input type="checkbox" class="demo2" id="demo2">
-        <label for="demo2"> <h3>Clan du Vent</h3></label>  <br>
+        <label for="demo2"> Clan du Vent</label>  <br>
         <input type="checkbox" class="demo2" id="demo2">
         <label for="demo2">Clan de la Rivière</label>  <br>
         <input type="checkbox" class="demo2" id="demo2">
