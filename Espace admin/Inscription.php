@@ -13,9 +13,9 @@ if(isset($_POST['envoi'])){
 
         }
 
- #   }else{
-  #      echo "Veuillez compléter tous les champs ...";
-  #  }
+   }else{
+        echo "Veuillez compléter tous les champs ...";
+    }
 
 }
 ?>
