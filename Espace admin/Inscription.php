@@ -1,12 +1,5 @@
 <?php
-session_start();
-
-$servername = '127.0.0.1:3306';
-$username = 'root';
-$password = 'Aa<<12345';
-
-//On établit la connexion
-$conn = new mysqli($servername, $username, $password);
+$bdd = new PDO( 'mysql:host=localhost;dbname=u623834937_espace_membres;charset=UTF8', 'u623834937_discord', 'lgdcRP<1' );
 
 //On vérifie la connexion
 if($conn->connect_error){
