@@ -2,8 +2,8 @@
 session_start();
 
 $servername = '127.0.0.1:3306';
-$username = 'speedcube';
-$password = 'Aa<<12345';
+$username = 'u623834937_i4QuB';
+$password = '';
 
 //On établit la connexion
 $conn = new mysqli($servername, $username, $password);
