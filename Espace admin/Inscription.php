@@ -2,7 +2,7 @@
 session_start();
 
 $servername = '127.0.0.1:3306';
-$username = 'u623834937_i4QuB';
+$username = 'root';
 $password = 'Aa<<12345';
 
 //On établit la connexion
