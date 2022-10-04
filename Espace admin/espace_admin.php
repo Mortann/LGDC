@@ -12,7 +12,8 @@ if(!$_SESSION['mdp']){
     <meta charset="UTF-8">
 
     <title>Espace Admin </title>
-
+    <link rel="shortcut icon" href="https://laguerredesclansrp.com/m%C3%A9dia/PDG%20LGDC%202%20(2).ico"/>
+    <link rel="apple-touch-icon" href="https://laguerredesclansrp.com/m%C3%A9dia/PDG%20LGDC%202%20(2).ico"/>
     <link rel="stylesheet" href="../miseenpage.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   
